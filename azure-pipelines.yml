@@ -10,6 +10,9 @@ trigger:
 pool:
   vmImage: 'macos-latest'
 
+variables:
+- group: var_group
+
 steps:
 - task: semver-bump@1
   inputs:
